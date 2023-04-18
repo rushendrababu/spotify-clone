@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+    background-color: rgb(227, 211, 190);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Patrick Hand', cursive;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65xp;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 10px 12px;
+}
+
+.brand img{
+    width: 55px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+
+.container{
+    height: 450px;
+    background-color: black;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    
+}
+
+.songitemcontainer{
+    margin-top: 25px;
+    overflow-y: scroll;
+    max-height: 350px;
+    list-style: none;
+}
+
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songitem img{
+    height: 35px;
+    width: 35px;
+    margin: 0 23px;
+    border-radius: 30px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+
+
+.bottom{
+    position: sticky;
+    height: 150px;
+    background-color: black;
+    bottom: 1px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.songinfo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    bottom: 15px;
+    left: 705px;
+}
+
+.songoinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in; 
+}
+
+#myprogressbar{
+    width: 60%;
+    cursor: pointer;
+}
